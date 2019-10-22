@@ -1,0 +1,22 @@
+<!-- <div class = 'movies' *ngFor='let movie of movies'>
+  <div class = 'col-4 col-md4'>
+    <div class = 'card'>
+      <img src = {{movie.Poster}} />
+      <h3>{{movie.Title}}</h3>
+      <h5>{{movie.Year}}</h5>
+    </div>
+  </div>
+</div> -->
+
+<div class = 'container'>
+  <div class = 'row'>
+    <div class = 'col-md4 col-bg4 col-sm1' *ngFor='let movie of movies'>
+      <div class = 'movie text-center'>
+        <img src = {{movie.Poster}}/>
+        <h3>{{movie.Title}}</h3>
+        <h5>{{movie.Year}}</h5>
+        <a class="btn btn-primary" href="#">Movie Details</a>
+      </div>
+    </div>
+  </div>
+</div>
